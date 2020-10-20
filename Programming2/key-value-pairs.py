@@ -29,3 +29,14 @@ if "published" in movie:
 
 movie["ships"] = ["Falcon", "Death Star"]
 print(movie)
+
+# Looping through dictionaries
+
+for key in movie: 
+    print(key)   # prints the keys
+
+for key in movie:
+    print(movie[key])   # prints the value of the keys
+
+for key in movie:
+    print(key,":", movie[key])
