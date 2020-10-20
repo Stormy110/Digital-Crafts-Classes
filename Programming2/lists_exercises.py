@@ -1,17 +1,17 @@
-# Problem 1
+# # Problem 1
 
-favorite_foods = ["Tacos","Steak","Chicken Wings"]
-print(favorite_foods[1])
-print(favorite_foods[-1])
+# favorite_foods = ["Tacos","Steak","Chicken Wings"]
+# print(favorite_foods[1])
+# print(favorite_foods[-1])
 
 
-# Problem 2
+# # Problem 2
 
-things = ["coffee", "notebook", "pen", "phone"]
-count = 0
-for thing in things:
-    count += 1
-    print("%d. %s" % (count, thing))
+# things = ["coffee", "notebook", "pen", "phone"]
+# count = 0
+# for thing in things:
+#     count += 1
+#     print("%d. %s" % (count, thing))
 
 # Problem 3
 

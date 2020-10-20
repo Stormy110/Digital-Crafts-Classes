@@ -13,9 +13,8 @@ else:
         print("perfect length")
 
 
+# This will print the first 2 options and those only and then check the name len
 
 
 
-#If pet_name is "Shadow" output ONLY "El Gato Diablo!"
-#If the input is equal to "Daisy" output ONLY "Good Dog!"
         

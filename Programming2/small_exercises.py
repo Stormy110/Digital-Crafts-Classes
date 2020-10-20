@@ -15,6 +15,9 @@ for number in numbers:
         large_num = number
 print(large_num)
 
+numbers.sort()
+print(numbers[-1])
+
 # Problem 3
 
 numbers = [3,87,13,45,2]
@@ -24,12 +27,17 @@ for number in numbers:
         small_num = number
 print(small_num)
 
+print(min(numbers))
+
+
 # Problem 4
 
 numbers = [3,87,13,45,2, 6, 18]
 for number in numbers:
     if number % 2 == 0:
         print(number)
+
+
 
 # Problem 5
 

@@ -26,7 +26,7 @@ else:
     #print(f"{length} is too few characters.")
 
 
-# Multiple Conditions
+# Multiple Conditions using  and  -  or
 name = input("what is your name? ")
 num = len(name)
 if num > 3 and num < 15:
@@ -37,3 +37,4 @@ if num > 3 and num < 15:
     print(f"Welcome {name}")
 else:
     print(f"{length} is not a good number")
+

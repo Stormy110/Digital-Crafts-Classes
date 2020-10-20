@@ -78,76 +78,76 @@
             
 # Make a to-do list
 
-todo_list = []
+# todo_list = []
 
-Main_Menu = """
-Choose an action:
-P = Print to do list.
-A = Add a new thing to do.
-R = Replace an item in the list.
-C = Complete a to-do item.
+# Main_Menu = """
+# Choose an action:
+# P = Print to do list.
+# A = Add a new thing to do.
+# R = Replace an item in the list.
+# C = Complete a to-do item.
 
-(Press Enter to exit the program)
-"""
-choice = input(Main_Menu)
-choice = choice.upper()
+# (Press Enter to exit the program)
+# """
+# choice = input(Main_Menu)
+# choice = choice.upper()
 
 
-while len(choice) > 0:
-    if choice == "P":
-        print("To-Do List:")
-        print("=========================")
-        count = 1
-        for todo in todo_list:
-            print("%d: %s" % (count, todo))
-            count += 1
-    elif choice == "A":
-        new_todo = input("What do you need to do?\n")
-        if len(new_todo) > 0:
-            todo_list.append(new_todo)
-    elif choice == "R":
-        # Print the current list of to-do items
-        print("\n\n\nTo do:")
-        print("====================")
-        count = 1
-        for todo in todo_list:
-            print("%d: %s" % (count, todo))
-            count += 1
+# while len(choice) > 0:
+#     if choice == "P":
+#         print("To-Do List:")
+#         print("=========================")
+#         count = 1
+#         for todo in todo_list:
+#             print("%d: %s" % (count, todo))
+#             count += 1
+#     elif choice == "A":
+#         new_todo = input("What do you need to do?\n")
+#         if len(new_todo) > 0:
+#             todo_list.append(new_todo)
+#     elif choice == "R":
+#         # Print the current list of to-do items
+#         print("\n\n\nTo do:")
+#         print("====================")
+#         count = 1
+#         for todo in todo_list:
+#             print("%d: %s" % (count, todo))
+#             count += 1
         
-        which_index = input("Which to-do number? ")
-        try:
-            which_index = int(which_index)
-            which_index -= 1 # Convert from human-readable to 0-based index
+#         which_index = input("Which to-do number? ")
+#         try:
+#             which_index = int(which_index)
+#             which_index -= 1 # Convert from human-readable to 0-based index
             
-            if which_index >= 0 and which_index < len(todo_list):
-                new_todo = input("What do you need to do? ")
-                todo_list[which_index] = new_todo
-        except ValueError:
-            print("\n\n***Please enter a number.***") 
-    elif choice == "C":
-        # Print the current list of to-do items
-        print("\n\n\nTo do:")
-        print("====================")
-        count = 1
-        for todo in todo_list:
-            print("%d: %s" % (count, todo))
-            count += 1
+#             if which_index >= 0 and which_index < len(todo_list):
+#                 new_todo = input("What do you need to do? ")
+#                 todo_list[which_index] = new_todo
+#         except ValueError:
+#             print("\n\n***Please enter a number.***") 
+#     elif choice == "C":
+#         # Print the current list of to-do items
+#         print("\n\n\nTo do:")
+#         print("====================")
+#         count = 1
+#         for todo in todo_list:
+#             print("%d: %s" % (count, todo))
+#             count += 1
         
-        which_index = input("Which to-do number? ")
-        try:
-            which_index = int(which_index)
-            which_index -= 1 # Convert from human-readable to 0-based index
+#         which_index = input("Which to-do number? ")
+#         try:
+#             which_index = int(which_index)
+#             which_index -= 1 # Convert from human-readable to 0-based index
             
-            if which_index >= 0 and which_index < len(todo_list):
-                completed_todo = todo_list[which_index]
-                del todo_list[which_index]
-                print("%s has been marked complete!" % completed_todo)
-        except ValueError:
-            print("\n\n***Please enter a number.***")   
-    else:
-        print("\n\n***Please enter a valid menu option.***")    
+#             if which_index >= 0 and which_index < len(todo_list):
+#                 completed_todo = todo_list[which_index]
+#                 del todo_list[which_index]
+#                 print("%s has been marked complete!" % completed_todo)
+#         except ValueError:
+#             print("\n\n***Please enter a number.***")   
+#     else:
+#         print("\n\n***Please enter a valid menu option.***")    
 
-    choice = input(Main_Menu)
-    choice = choice.upper() # Simplifies our if-conditions
+#     choice = input(Main_Menu)
+#     choice = choice.upper() # Simplifies our if-conditions
 
-print("Have a nice day!")
+# print("Have a nice day!")

@@ -18,3 +18,10 @@ while index <= len(names):
     print(names[0])
     del names[0]
 print(names)
+# another solution
+
+names = ["Joe","Bob","Gary","James","Jim"]
+while len(names):
+    print(names[0])
+    del names[0]
+print(names)

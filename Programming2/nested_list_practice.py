@@ -17,5 +17,4 @@ for food in shopping:
 
 # # Better Solution
 
-
-       
+ 
