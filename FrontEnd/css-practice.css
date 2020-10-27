@@ -1,0 +1,26 @@
+.header {
+    color:red;
+    text-align: center;
+}
+.travel-list {
+    background-color: beige;
+    color: black;
+    align-content: center;
+}
+.food-list {
+    background-color: black;
+    color: beige;
+    align-content: center
+}
+.puppy-pic {
+    align-content: center;
+}
+.puppy-site {
+    text-align: center;
+
+}
+.footer {
+    color:red;
+    background-color: black;
+    text-align: center;
+}

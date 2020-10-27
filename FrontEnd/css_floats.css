@@ -1,0 +1,25 @@
+.header {
+    overflow: auto;
+    /* since all the elements are floating,
+       setting overflow will allow the rest of
+       the layout to flow properly */
+  }
+  .header-menu {
+    float: right;
+    list-style-type: none;
+  }
+  
+  .header-menu > li {
+    float: left;
+    padding-right: 10px; /* whitespace */
+  }
+
+  .container {
+    overflow: auto; /* don't forget to adjust the overflow */
+    clear: both;
+  }
+  
+  .sidebar {
+    float: left;
+    padding: 10px;
+  }
