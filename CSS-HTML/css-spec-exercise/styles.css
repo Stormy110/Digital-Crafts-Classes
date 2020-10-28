@@ -1,0 +1,20 @@
+body {
+    font-weight: bold;
+    font:arial;
+}
+h1 {
+    font:Helvetica;
+}
+.active {
+    border-width:10px;
+    border-style:solid;
+    border-color:black;
+}
+.completed {
+    text-decoration: line-through;
+}
+li {
+    background-color:orange;
+    color:black
+    
+}

@@ -1,0 +1,56 @@
+
+          /* Sets the font family */
+          body {
+              font-family: Arial, Helvetica, sans-serif;
+          } 
+          /* sets background for all 'a's */           
+          a {
+              text-decoration: none;
+          }
+          /* sets the font-famly for all 'div's */
+          div {
+              font-family: 'Courier New', Courier, monospace;
+          }
+          /* makes nav-links bold */
+          .nav-link {
+              font-weight:bold;
+          }  
+          /* makes active class silver and underline */  
+          .active {
+              background:silver;
+          }
+      
+      
+
+      /*<style>
+  ...
+  /* psudo class is more specific than class 
+  .nav-link:first-child {
+    background:green;
+    text-decoration:underline;
+}
+...
+</style>*/
+
+
+/* Using combinators*/
+
+
+/* coma seperates individual selectors */
+h2, h3 {
+    background:#efefef;
+    border-bottom:3px solid;
+}
+/* spaces indicate parent -> child */
+.main-content .active {
+    background:red;
+    border: 1px solid #000;
+}
+/* no spaces means has both I all a elements with active class */
+a.active {
+    color:green;
+    font-weight:bold;
+}
+
+
+
