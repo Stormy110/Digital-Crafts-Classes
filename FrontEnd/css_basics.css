@@ -8,14 +8,14 @@ Declaration - The property/value(s) pair in a css rule. There can be many declar
 /* CSS comment*/
 
 /* Rule (or ruleset) breakdown */
-selector 						   
+/*selector 						   
 { /* Declaration Block Start  */
-    property1:value1; /* <- Declaration */
-    property2:value2 value2a value2b; 	
-}/* Declaration Block End    */
+    /*property1:value1; /* <- Declaration */
+    /*property2:value2 value2a value2b; */	
+/* Declaration Block End    */
 
   /* Tag Selector */
-  a {
+a {
     font-weight:bold;
     background:blue;
 }
