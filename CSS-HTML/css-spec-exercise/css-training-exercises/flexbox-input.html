@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Input Add-ons Exercise Solution</title>
+    <style>
+      .layout {
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .input-container {
+        display: flex;
+        margin-bottom: 10px;
+      }
+
+      .input-field,
+      .input-addon {
+        padding: 5px 10px;
+        font-size: 16px;
+      }
+
+      .input-field {
+        flex: 1;
+      }
+
+      .input-addon {
+        background-color: #eee;
+        border: none;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <h1>Input Add-ons Exercise</h1>
+      <!-- Append -->
+      <label for="name">Name</label>
+      <div class="input-container">
+        <input
+          type="text"
+          id="name"
+          class="input-field"
+          placeholder="Enter your name"
+        />
+        <button class="input-addon">Submit</button>
+      </div>
+
+      <!-- Prepend -->
+      <label for="price">Price</label>
+      <div class="input-container">
+        <div class="input-addon">$</div>
+        <input
+          type="text"
+          id="price"
+          class="input-field"
+          placeholder="Enter the price"
+        />
+      </div>
+
+      <!-- Both -->
+      <label for="handle">Handle</label>
+      <div class="input-container">
+        <div class="input-addon">@</div>
+        <input
+          type="text"
+          id="handle"
+          class="input-field"
+          placeholder="Enter the handle"
+        />
+        <button class="input-addon">Search</button>
+      </div>
+    </div>
+  </body>
+</html>

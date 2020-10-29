@@ -3,7 +3,7 @@ my_siblings = ["Ty", "Molly", "Kailly", "Reilly"]
 index = 0
 
 #my_list[index] # same as saying my_list[0]
-# while loop
+# while
 while index < len(my_siblings):
     print(index + 1, ":", my_siblings[index])
     index += 1

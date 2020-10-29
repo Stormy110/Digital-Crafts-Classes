@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin:0;
+            font-size: 20px;
+            color:black;
+            text-align: center;
+        }
+        .header {
+            background:pink;
+            padding: 20px;
+        }
+        .content {
+            background:beige;
+            padding: 20px;
+        }
+        .sidebar-left {
+            background:pink;
+            padding: 20px;
+        }
+        .sidebar-right {
+            background:pink;
+            padding: 20px;
+        }
+        .footer {
+            background:pink;
+            padding: 20px;
+        }
+        .layout {
+            min-height:100vh;
+            display:flex;
+            flex-direction: column;
+        }
+        .content {
+            display:flex;
+            flex:1;
+    
+        }
+        .sidebar-left {
+            order:1;
+            width:30%;
+        }
+        .sidebar-right {
+            order:3;
+            width:20%; 
+
+        }
+        .main {
+            order:2
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+      <header class="header">
+        <h1>Header</h1>
+      </header>
+      <section class="content">
+        <main class="main">
+          <h2>Content</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+            delectus minus error neque quam reiciendis voluptate saepe quis
+            accusantium! Officia ab provident doloribus aliquid perferendis
+            quaerat eaque iusto, dolor temporibus, recusandae vel autem, alias
+            laudantium optio error quam aliquam ad vero. Dolore dignissimos
+            laboriosam obcaecati error dolorum numquam molestias enim!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+            delectus minus error neque quam reiciendis voluptate saepe quis
+            accusantium! Officia ab provident doloribus aliquid perferendis
+            quaerat eaque iusto, dolor temporibus, recusandae vel autem, alias
+            laudantium optio error quam aliquam ad vero. Dolore dignissimos
+            laboriosam obcaecati error dolorum numquam molestias enim!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+            delectus minus error neque quam reiciendis voluptate saepe quis
+            accusantium! Officia ab provident doloribus aliquid perferendis
+            quaerat eaque iusto, dolor temporibus, recusandae vel autem, alias
+            laudantium optio error quam aliquam ad vero. Dolore dignissimos
+            laboriosam obcaecati error dolorum numquam molestias enim!
+          </p>
+        </main>
+        <aside class="sidebar-left">
+          <h3>Menu</h3>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+          </ul>
+        </aside>
+        <aside class="sidebar-right">
+          <h4>Ad</h4>
+          <h4>Ad</h4>
+          <h4>Ad</h4>
+        </aside>
+      </section>
+      <footer class="footer">
+        <h1>Footer</h1>
+      </footer>
+    </div>
+  </body>
+</html>

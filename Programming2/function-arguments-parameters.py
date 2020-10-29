@@ -31,5 +31,6 @@ def tell_me_stuff(first_name, age, gender):
 
 tell_me_stuff("Clint", 38, "Male")
 tell_me_stuff("Male", "Clint", 38)
+
 #Giving the wrong type causes an error
 add_two_numbers("foo", "bar")

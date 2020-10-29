@@ -28,7 +28,7 @@ def add_to_c(d):
     return e 
 
 add_two_numbers(1,2) #c is in the function, but its local
-# add_to_c(12) # errors .. c is not in scope
+# 25add_to_c(12) # errors .. c is not in scope
 
 
 

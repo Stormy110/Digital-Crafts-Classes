@@ -1,26 +1,26 @@
 
-          /* Sets the font family */
-          body {
-              font-family: Arial, Helvetica, sans-serif;
-          } 
-          /* sets background for all 'a's */           
-          a {
-              text-decoration: none;
-          }
-          /* sets the font-famly for all 'div's */
-          div {
-              font-family: 'Courier New', Courier, monospace;
-          }
-          /* makes nav-links bold */
-          .nav-link {
-              font-weight:bold;
-          }  
-          /* makes active class silver and underline */  
-          .active {
-              background:silver;
-          }
-      
-      
+        /* Sets the font family */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        /* sets background for all 'a's */           
+        a {
+            text-decoration: none;
+        }
+        /* sets the font-famly for all 'div's */
+        div {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /* makes nav-links bold */
+        .nav-link {
+            font-weight:bold;
+        }  
+        /* makes active class silver and underline */  
+        .active {
+            background:silver;
+        }
+    
+    
 
       /*<style>
   ...

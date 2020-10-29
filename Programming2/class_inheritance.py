@@ -13,7 +13,7 @@ class Mob:
 class Hero(Mob):
     def yell(self):
         print("I %s, say to though villain, I will attack thee!" % self.name)
-    pass
+    
 
 hero = Hero("Ian")
 print(hero.power)

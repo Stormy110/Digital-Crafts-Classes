@@ -54,3 +54,14 @@ print(vehicle_title)
 vehicle_title = superhero["vehicle"]["title"]
 
 print(vehicle_title)
+
+# to access data in a list in a dictionary
+lasso = superhero["gear"][0]
+print(lasso)
+
+# OR iterate through each item
+
+for item in superhero["gear"]:
+    print("%s has %s" % (superhero["name"], item))
+
+

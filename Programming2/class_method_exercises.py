@@ -22,21 +22,21 @@ class Vehicle:
             self.speed = self.top_speed
             
 
-class Sport(Vehicle):
-    def __init__(self):
-        self.category = category
-        self.color = color
-        self.top_speed = top_speed
-        self.acceleration = acceleration
-        self.turbo = turbo
-        self.wheels = wheels
-        self.speed = 0
-        self.position = 0
+# class Sport(Vehicle):
+#     def __init__(self):
+#         self.category = category
+#         self.color = color
+#         self.top_speed = top_speed
+#         self.acceleration = acceleration
+#         self.turbo = turbo
+#         self.wheels = wheels
+#         self.speed = 0
+#         self.position = 0
         
 
 
-class Motorcycle(Vehicle):
-    pass
+# class Motorcycle(Vehicle):
+#     pass
 
 jeep = Vehicle("SUV","black",7,2,4)
 ford = Vehicle("coupe", "red",6,3,4)

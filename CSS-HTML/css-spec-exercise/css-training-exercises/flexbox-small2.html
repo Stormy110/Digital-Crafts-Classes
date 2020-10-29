@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+        }
+        .container {
+            display:flex;
+            height:700px;
+        }
+        .column {
+            flex-grow: 1;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .red {
+            background:red
+        }
+        .blue {
+            background:blue;
+        }
+        .yellow {
+            background:yellow;
+        }
+        .number {
+            font-size: 20px;
+            color:black;
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red column"><div class="number">1</div></div>
+        <div class="blue column"><div class="number">2</div></div>
+        <div class="yellow column"><div class="number">3</div></div>
+    </div>
+    
+</body>
+</html>
