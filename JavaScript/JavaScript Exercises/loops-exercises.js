@@ -17,3 +17,12 @@ for(let i = 6; i >= 2; i--){
     number /= i;
     console.log(number)
 }
+
+
+let sum = 0;
+for(let i = 0; i <= 1000; i++){
+    if(i % 2 == 0 || i % 3 == 0)continue;
+    sum += i
+    console.log(sum)
+}
+console.log(sum)
