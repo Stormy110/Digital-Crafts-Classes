@@ -1,0 +1,12 @@
+let myArr = ['a','c','e','f','i','z','t','s','w','h']
+console.log(myArr[3])
+console.log(myArr[5] + myArr[2])
+myArr.push('u')
+myArr.push('j')
+myArr.push('l')
+myArr.push('x')
+let removed = myArr.shift()
+console.log(removed)
+console.log(myArr)
+console.log(myArr.join(''))
+console.log(myArr.sort())
