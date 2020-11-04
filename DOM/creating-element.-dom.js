@@ -8,6 +8,8 @@ let someText = document.createElement("p")
 // add element to parent
 
 let main = document.querySelector("main")
+
+
 main.append(content,bigList)
 
 for(let i = 0; i < 6; i++){
