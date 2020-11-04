@@ -1,13 +1,9 @@
 function printBox(width,height){
-    for(let i = 1; i < width; i++){
-      for(let j = 1; j < height; j++){
-          if(i == 1 || i == width -1 || j == 1 || j == height -1){
-              console.log('*')
-          } else {
-              console.log(' ')
-          }
-        }
-        console.log('\n')
+    console.log(' - '.repeat(width));
+    for (let i = 1; i < height; i++){
+        console.log(" " + ' |'.repeat(width-2))
     }
+    console.log(" - ".repeat(width))
 }
 printBox(4,5)
+
