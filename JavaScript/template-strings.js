@@ -19,10 +19,16 @@ inside
   //Using ternery inside
   let myArray = [{name:"Clint"}, {name:"Anna"}, {name:"Olivia"}]
 
-  let output = `
+  let output1 = `
   My Family names are :
   \n
   ${myArray.map(p=>p.name).join("\n")}
   And some others.
   ` 
-  console.log(output)
+  console.log(output1)
+
+  let myFunc = function(){
+      return 'This is ok'
+  }
+
+  console.log(`this is .....${myFunc()}`)
