@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI-API</title>
+    <style>
+        label {
+            margin:15px;
+        }
+    </style>
 </head>
 <body>
     <label for="user-name">User-Name
         <input id="user-name" name="user-name">
     </label>
     <input placeholder="write your name">
+    <p>lorem</p>
+    <label for="terms">Agree to terms?
+        <input type="checkbox" id='terms' name='terms' value="agree">
+    </label>
+    <p>lorem</p>
+    <div id="checkbox-group" style="background:red;color:black;font-weight: bold; margin:20px;">
+        <label>Dogs
+            <input value="dogs" name="animals" type="checkbox">
+        </label>
+        <label>Cats
+            <input value="cats" name="animals" type="checkbox">
+        </label>
+        <label>Frogs
+            <input value="frogs" name="animals" type="checkbox">
+        </label>
+        <label>Cows
+            <input value="cows" name="animals" type="checkbox">
+        </label>
+    </div>
 </body>
 </html>
