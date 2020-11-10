@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-exercises</title>
+</head>
+<body>
+    <form id='login'>
+        <textarea name='textarea' id='textarea' placeholder="what is your purpose?"></textarea>
+        <p id ='p'>Lorem Ipsum</p>
+        <input name="username" id='username' placeholder="username">
+        <input name="password" type='password' id="password">
+        <button id='button' form='login'>Login</button>
+    </form>
+    <script>
+        let urlParams = new URLSearchParams(window.location.search)
+        console.log(urlParams)
+        let body = document.querySelector('body')
+        let form1 = document.createElement('form')
+        form1.id = 'login1'
+        let textarea1 = document.createElement('textarea')
+        textarea1.name = 'textarea1'
+        textarea1.id = 'textarea1'
+        textarea1.placeholder = 'Howdy Partner!'
+        let p1 = document.createElement('input')
+        p1.id = 'p'
+        p1.name = 'nickname'
+        p1.placeholder = 'nickname'
+        let input1 = document.createElement('input')
+        input1.name = 'username1'
+        input1.id = 'username1'
+        input1.placeholder = 'username1'
+        let input2 = document.createElement('input')
+        input2.name = 'password1'
+        input2.id = 'password1'
+        input2.type = 'password1'
+        let button1 = document.createElement('button')
+        button1.id = 'button1'
+        button1.form = 'login1'
+        button1.innerText = 'Login'
+        button1.type = 'submit'
+        form1.append(textarea1,p1,input1,input2,button1)
+        body.append(form1)
+        let d = document.createElement('div')
+
+        const formHandler = (evt)=>{
+            evt.preventDefault()
+            return [...evt.target.elements]
+            .filter(el=>el.name)
+            .map(el=>({name:el.name, value:el.value}))}
+
+
+
+        let loginForm = document.querySelector("#login1")
+        loginForm.addEventListener("submit",(evt)=>{
+            results = formHandler(evt)
+            body.append(d)
+            console.log(results)
+            for(let i = 0;i < results.length;i++){
+                d.append(results[i].name,":", results[i].value)
+                document.body.append(d)
+            }
+            form1.reset()
+        })
+
+        
+
+    </script>
+</body>
+</html>
