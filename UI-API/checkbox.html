@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkboxes</title>
+</head>
+<body>
+    <!--CHECKBOXES-->
+    <!--Checkboxes are designed to be toggleable by repeatedly clicking on an element.
+If unchecked, when submitted no data is sent. If it is checked the value of name is set to on "agree=on" in the request.-->
+<input type="checkbox" id="agree" name="agree">
+<label for="agree">Agree To terms?</label>
+
+<p>lorem</p>
+<!--USING VALUE-->
+<label> I like dogs! <input type="checkbox" name="thoughts-on-dogs" value="dogsFTW"></label>
+<!--If checked it would send 'thoughts-on-dogs=dogsFTW'-->
+
+
+<p>lorem</p>
+<!--CHECKED-->
+<input checked type="checkbox" id="agree" name="agree">
+<label for="agree">Agree To terms?</label>
+<!--html boolean do not have a value="false". Instead just the word being there indicates the value is true and the the absense of the word means it is false.-->
+
+<p>lorem</p>
+<!--MULTIPLE ITEMS-->
+<div class="checkbox-group">
+    <label> Cars 
+        <input value="cars" name="transport" type="checkbox">
+    </label>
+    <label> Trains 
+        <input value="trains"  name="transport" type="checkbox">
+    </label>
+    <label> Planes 
+        <input value="planes" name="transport" type="checkbox">
+    </label>
+</div>
+<!--All elements have the same name and each checked items sends to the server the name=value. So if cars and planes are checked the server would be sent "transport=cars&transport=planes"-->
+
+
+<!--Check out toggle using checkbox on css tricks-->
+
+</body>
+</html>

@@ -31,3 +31,4 @@ let {speed} = ship
 let {age: ship_age, speed: ship_speed} = ship
 console.log(ship_age,ship_speed)
 console.log(ship)
+console.log(age)

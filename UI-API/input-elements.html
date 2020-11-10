@@ -1,0 +1,42 @@
+<!--FORMS-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--ATTRIBUTES OF INPUTS-->
+    <input 
+      id="username" 
+      class="special" 
+      name="user-name" 
+      placeholder="Username"
+  ><!--name is very important, need a name, usually same as id-->
+  <!--placeholder just puts placeholder text in the box-->
+  <!--value as an attribute will automatically put in an inout without entering any-->
+  <!-- All form elements need a unique name -->
+    <input />
+
+    <!--the type attribute has the ability to completly change the behavior of the input element and will be used to make several of the other element types.-->
+    <input type="password" name="password">
+    <input type="email">
+    <input type="radio"><!-- Huh? -->
+    <input type='checkbox'>
+
+
+    <!--LABELS-->
+    <label for="username">User Name</label>
+    <input 
+      id="username" 
+      name="user-name"
+    />
+  <!-- clicking on the label is the same as clicking on the element if the for is a valid id -->
+    <label> User Name
+        <input id="username" name="user-name">
+    <label>
+  <!-- this is another way to assign a label to an element-->
+</body>
+</html>
