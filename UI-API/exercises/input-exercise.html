@@ -35,7 +35,7 @@
         </label>
     </div>
     <P>LOREM</P>
-    <div class="radio" style="background:yellow;color:purple;border:solid black 5px;">
+    <div class="radio" style="background:yellow;color:purple;">
         <label for="cars">Cars
             <input id="cars" checked name="transport" value="cars" type="radio">
         </label>
@@ -46,5 +46,23 @@
             <input id="planes" name="transport" value="planes" type="radio">
         </label>
     </div>
+    <p>lorem</p>
+    <label for="favorite-drink">Favorite Drink</label>
+    <select name="favorite-drink" id="favorite-drink">
+        <option value="">--Please select your favorite drink--</option>
+        <option value="water">Water</option>
+        <option value="beer">Beer</option>
+        <option value="gatorade">Gatorade</option>
+    </select>
+    <script>
+        let wine = document.createElement('option')
+        wine.value = "wine"
+        wine.innerText = "Wine"
+        let whiskey = document.createElement('option')
+        whiskey.value = 'whiskey'
+        whiskey.innerText = 'Whiskey'
+        let select = document.querySelector('#favorite-drink')
+        select.append(wine,whiskey)
+    </script>
 </body>
 </html>

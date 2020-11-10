@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select element</title>
+</head>
+<body>
+    <!--SELECT-->
+    <label for="favorite-food">Favorite Food</label>
+    <select name="favorite-food" id="favorite-food"></select>
+    <p>lorem</p>
+
+    <!--OPTION-->
+    <label for="favorite-food">Favorite Food</label>
+    <select name="favorite-food" id="favorite-food">
+        <option value="pizza">Pizza (Ninja Turtles)</option>
+        <option value="mushrooms">Shrooms (Mario)</option>
+        <option value="doughnut"> Doughnuts (Homer)</option>
+    </select>
+    <!--sends the value to the server, not the text so always set the value-->
+    <P>LOREM</P>
+
+    <!-- have null value for initial -->
+    <label for="favorite-food">Favorite Food</label>
+    <select name="favorite-food" id="favorite-food">
+        <option value="">---Please Select a Food ---</option>
+        <option value="pizza">Pizza (Ninja Turtles)</option>
+        <!-- Selected will be the default -->
+        <option value="mushrooms">Shrooms (Mario)</option>
+        <option value="doughnut"> Doughnuts (Homer)</option>
+    </select>
+
+    <P>LOREM</P>
+    <!--OPTGROUP-->
+    <label for="favorite-food"> opt grp Favorite Food</label>
+    <select name="favorite-food" id="favorite-food">
+        <option value="">---Please Select a Food ---</option>
+        <optgroup label="Italian">
+            <option value="pizza">Pizza (Ninja Turtles)</option>
+            <!-- Selected will be the default -->
+            <option selected value="mushrooms">Shrooms (Mario)</option>
+        </optgroup>
+        <optgroup label="Sweets">
+            <option value="doughnut"> Doughnuts (Homer)</option>
+        </optgroup>
+    </select>
+</body>
+</html>
