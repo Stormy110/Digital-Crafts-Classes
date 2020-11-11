@@ -22,6 +22,7 @@ let notHere = document.querySelector("#not-here") //not in document
 let ideas1 = document.querySelectorAll(".child-idea")
 console.log(ideas1)
 console.dir(ideas1)
+
 ideas1.forEach(function(idea){
     console.log(idea)
 })

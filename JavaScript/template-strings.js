@@ -2,33 +2,33 @@
 with
 breaks
 inside
-  `
-  //can span multiple lines. HTML output the literal spaces.
-  
-  //templete strings (template literals)
-  //like python fstrings but no f and only used with `
-  let a = "Awesome"
-  let b = "Super"
-  console.log(`the letter a = ${a} and b is ${b}`)
+`
+//can span multiple lines. HTML output the literal spaces.
 
-  //Advanced Functionality
+//templete strings (template literals)
+//like python fstrings but no f and only used with `
+let a = "Awesome"
+let b = "Super"
+console.log(`the letter a = ${a} and b is ${b}`)
 
-  let myName = "Clint"
-  let output = `Is ${myName} longer than 6 ? ${myName.length>6 ? 'YES!': 'No'}`
-  console.log(output)
-  //Using ternery inside
-  let myArray = [{name:"Clint"}, {name:"Anna"}, {name:"Olivia"}]
+//Advanced Functionality
 
-  let output1 = `
-  My Family names are :
-  \n
-  ${myArray.map(p=>p.name).join("\n")}
-  And some others.
-  ` 
-  console.log(output1)
+let myName = "Clint"
+let output = `Is ${myName} longer than 6 ? ${myName.length>6 ? 'YES!': 'No'}`
+console.log(output)
+//Using ternery inside
+let myArray = [{name:"Clint"}, {name:"Anna"}, {name:"Olivia"}]
 
-  let myFunc = function(){
-      return 'This is ok'
-  }
+let output1 = `
+My Family names are :
+\n
+${myArray.map(p=>p.name).join("\n")}
+And some others.
+` 
+console.log(output1)
 
-  console.log(`this is .....${myFunc()}`)
+let myFunc = function(){
+    return 'This is ok'
+}
+
+console.log(`this is .....${myFunc()}`)
