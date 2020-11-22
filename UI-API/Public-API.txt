@@ -1,0 +1,38 @@
+What is a public API?
+
+A public api is an api that is facing out of the internal organization. It is not nessearly free or avalible to anybody.
+Git list of public api : https://github.com/public-apis/public-apis
+  # Star Wars Data
+  https://www.swapi.tech/api/
+ 
+  # Random User
+  https://randomuser.me/api/
+
+
+USING PARAMS AND QUERY STRINGS
+
+#list all planets
+https://www.swapi.tech/api/planets/
+#Give data about planet 1
+https://www.swapi.tech/api/planets/1
+# Get vehicle # 4
+https://www.swapi.tech/api/vehicles/4
+
+#get 10 random users
+https://randomuser.me/api/?results=10
+#get 5 random males
+https://randomuser.me/api/?gender=male&results=5
+#Jmest names, gender and picture of 20 females
+https://randomuser.me/api/?inc=gender,name,picture&gender=female&results=20
+
+
+GETTING DATA VIA AJAX
+
+import {ajax} from "./modules/ajax.js" //From previous
+
+ajax("https://www.swapi.tech/api/planets/1",(results)=>{
+    //The data should be JSON!!!
+    let data = JSON.parse(results)
+    console.log(data)
+    //Now I can handle the data however i need to.
+})

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const ajax = (url, callback, method='GET')=>{
+    if(!url) return console.error("Request Required")
+    if(!callback) return console.error("Callback Required")
+    const request = new XMLHttpRequest();
+    request.addEventListener("readystatechange", evt=>{
+        let req = evt.target;
+        if(req.readyState !== 4) return;
+        if(req.status === 200) return callback(req.response)
+        //callback doesnt return anything
+        callback("")
+    })
+    request.open(method,url)
+    request.send()
+    }
+
+
+    ajax("test.txt", (results) =>{
+        console.log(results)
+        let body = document.querySelector('body')
+        body.append(results)
+    })
+
+    let ul = document.createElement('ul')
+    document.body.append(ul)
+    ajax("list1.txt", (results) =>{
+        console.log(results)
+        let li = document.createElement('li')
+        li.append(results)
+        ul.append(li)
+    })
+    ajax("list2.txt", (results) =>{
+        console.log(results)
+        let li = document.createElement('li')
+        li.append(results)
+        ul.append(li)
+    })
+    ajax("list3.txt", (results) =>{
+        console.log(results)
+        let li = document.createElement('li')
+        li.append(results)
+        ul.append(li)
+    })
+    </script>
+</body>
+</html>
