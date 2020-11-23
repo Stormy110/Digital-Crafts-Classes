@@ -13,3 +13,4 @@ const ajax = (url, callback, method='GET')=>{
     request.send()
 }
 
+
