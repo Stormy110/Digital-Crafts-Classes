@@ -1,0 +1,10 @@
+h1 {
+    color:red;
+    background:black;
+}
+nav {
+    display:flex
+}
+span {
+   margin: 10px 20px 10px 20px;
+}
