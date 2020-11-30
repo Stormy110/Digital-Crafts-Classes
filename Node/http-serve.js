@@ -1,4 +1,4 @@
-// serve files as html
+// serve files from server
 //Adding the ability to serve favicon.ico
 const http = require("http");
 const fs = require("fs")
@@ -51,10 +51,11 @@ const http = require("http");
 const fs = require("fs")
 const port = 5454
 
-const serveFavicon = (res)=>{
+const serveFavicon = (req,res)=>{
     fs.readFile("./favicon.ico", (err,data) => {
         if (err) {
             res.writeHead(404);
+            // can just put res.end() instead of next line
             return res.end(JSON.stringify(err));
         }
         res.writeHead(200);
@@ -63,6 +64,6 @@ const serveFavicon = (res)=>{
 }
 
 const server = http.createServer((req,res)=>{
-    if(req.url == `/favicon.ico`) return serveFavicon(res)
+    if(req.url == `/favicon.ico`) return serveFavicon(req,res)
     const url = new URL(req.headers.host+req.url)
 })

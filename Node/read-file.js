@@ -9,5 +9,6 @@ fs.readFile("stuff.json", 'utf8', (err, data)=>{
     output.map((value,index)=>console.log(`The item number ${index} is ${value}`))
 })
 
+// readfilesync is another way but usually just use readfile
 let data = fs.readFileSync("stuff.json","utf8")
 console.log(JSON.parse(data))

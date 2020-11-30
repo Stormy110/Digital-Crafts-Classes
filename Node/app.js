@@ -1,5 +1,6 @@
 const http = require("http");
 const port = 5566
+const addVisit = require("modules")
 //below we are importing the functions from their file location
 const generateContent = require("./modules/generateContent")
 const serveFile = require("./modules/serveFile")
@@ -29,8 +30,11 @@ const server = http.createServer((req,res)=>{
         additional,
        
     })  
+    //writes the wrapper to the response 
     res.write(wrapper)
+    // ends the server call
     res.end()
 })
+// listens for the server
 server.listen(port)
 

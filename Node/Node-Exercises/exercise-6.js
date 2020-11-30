@@ -23,7 +23,13 @@ const server = http.createServer((req,res)=>{
       <!DOCTYPE html>
       <html>
         <head><title>My Selection:${page}</title></head>
-        <body>${content}
+        <body>
+            <nav>kli
+                <span><a href="?page=home">Home</a></span>
+                <span><a href="?page=contact">Home</a></span>
+                <span><a href="?page=about">Home</a></span>
+            </nav>
+            ${content}
         </body>
       </html>
       `

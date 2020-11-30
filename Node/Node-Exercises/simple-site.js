@@ -17,7 +17,7 @@ const htmlContent = `<!DOCTYPE html>
         .then(data=>{
             data.forEach(person=>{
                 let li = document.createElement('li')
-                li.innerText = `${firstName} + ' ' + ${lastName} + ' ' + ${email}`
+                li.innerText = 
                 let ul = document.querySelector('ul')
                 ul.append(li)
             })
