@@ -20,5 +20,16 @@ const addOneToCount = (req,res,next)=>{
     req.count = req.count ? req.count+1:1;
     next()
 }
+
 app.get('/',timeLogger,addOneToCount,addOneToCount,addOneToCount,addOneToCount,addOneToCount,sendHome)
 
+
+const checkId = (req,res,next)=>{
+    if(req.params.id.length <= 4) return res.send("ID are at least 5 long.")
+    next()
+}
+
+app.get("/api/people/:id", checkId, (req,res)=>{
+    console.log('Id is long enough')
+    res.send("I can send the person here")
+})
